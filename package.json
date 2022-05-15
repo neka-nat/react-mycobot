@@ -1,0 +1,33 @@
+{
+  "name": "react-mycobot",
+  "version": "1.0.0",
+  "description": "A React-based WebSerial control package for myCobot robot arms.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "author": "neka-nat",
+  "license": "MIT",
+  "keywords": [
+    "mycobot",
+    "robotics",
+    "webserial",
+    "react",
+    "arm-control"
+  ],
+  "scripts": {
+    "build": "tsc && cp README.md dist/",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "typescript": "^4.9.5"
+  }
+}
